@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #243642;
+    font-family: "Open Sans", sans-serif;
+}
+/* start div */
+div .box{
+    width: 100%;
+    max-width: 520px;
+    margin: 50px auto 0;
+    background-color: #fff;
+    padding: 10px 5px;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+div .list-icon{
+    color: #387478;
+    font-size: 30px;
+    margin-left: 10px;
+}
+div h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: #387478;
+    display: inline-block;
+}
+div input{
+    border: none;
+    border-radius: 20px;
+    background-color: #387478;
+    padding: 10px 170px 10px 20px;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    font-weight: 700;
+    color: #fff;
+}
+div input::placeholder{
+    color: #fff;
+}
+div input:focus{
+    outline: none;
+}
+div .box .btn{
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: #629584;
+    color: #fff;
+    margin-left: -118px;
+    padding: 13px 50px 10px 50px;
+}
+div button:hover{
+    background-color: #f44336;
+    color: #fff;
+}
+.todo{
+    list-style: none; 
+    border: none;
+    border-radius: 20px;
+    background-color: #387478;
+    padding: 5px 0px 0px 20px;
+    width: 100%;
+    font-size: 20px;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.custom-checkbox {
+    width: 25px; 
+    height: 25px; 
+    border-radius: 50%; 
+    font-size: 17px;
+    border:  3px solid #fff; 
+    display: inline-flex;
+    justify-content: center; 
+    align-items: center; 
+    cursor: pointer; 
+}   
+.true{
+    color: #387478;
+}
+input[type="checkbox"]:checked ~ .custom-checkbox{
+    border: none; 
+    background-color: #6A9C89;
+}
+input[type="checkbox"]:checked ~ .custom-checkbox .true{
+    color: #fff;
+}
+
+input[type="checkbox"]:checked ~ .todo-text{
+    text-decoration: line-through;
+    font-weight: 700;
+    color: #ffffffa9;
+} 
+input[type="checkbox"]{
+    display: none;
+}
+.delete-button{
+    border: none;
+    color: #E9EFEC;
+    float: right;
+    padding-right: 20px;
+    background-color: transparent;
+}
+div .delete-button:hover{
+    background-color: transparent;
+    color: #243642;
+}
+@media only screen and (max-width:768px){
+    div input{
+        width: 100%;
+    }
+    div .box .btn{
+        margin-left: 0;
+        padding:10px;
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+/* end div */
